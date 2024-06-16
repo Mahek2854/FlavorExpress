@@ -1,0 +1,204 @@
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 2000px;
+    width: 100%;
+    overflow-x:hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    position:relative;
+    top:-170px;right:-700px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size:140%;
+    padding:30px;
+    font-family: "Fredericka the Great", serif;
+}
+
+.navbar li {
+    list-style: none;
+}
+.navbar li a:hover{
+    color:rgb(198, 237, 92);
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 140px;
+    width: 100%; /* Make the header occupy the full width */
+    position: relative;
+    top: -10px;
+}
+
+.left #logo img {
+    position: relative;
+    height: 150px;
+}
+
+.left #heading {
+    position: relative;
+    top: -110px;
+    left: 150px;
+    font-size: 350%;color:rgb(255, 255, 255);
+    font-family: "Fredericka the Great", serif;
+}
+.home{
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center;    /* Center children horizontally */
+    justify-content: center; /* Center children vertically if needed */
+    text-align: center;
+    background-image: url('bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center;
+    height:640px;
+    box-sizing: border-box;
+    
+}
+.home #homecontent{
+    position: relative;top:-100px;right:500px;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center;    /* Center children horizontally */
+    justify-content: center; /* Center children vertically if needed */
+    text-align: center;
+    
+
+}
+
+.home h1{
+    position: relative;top:80px;left:46px;text-align: center;
+    font-size: 350%;color:rgb(139, 187, 7);
+    font-family: "Julee", cursive;
+    
+}
+.home #homecontent p{
+    position: relative;top:50px;left:70px;
+    height:100px;width: 600px;
+    font-family: "Fredericka the Great", serif;
+    font-size:100%;
+    color: aliceblue;
+}
+.home #homecontent span{
+    color:aliceblue;
+}
+.home #homecontent .btn{
+    background-color: rgb(236, 163, 85);
+    font-size: 140%;
+    position: relative;top:35px;left:30px;
+    border:3px solid brown;
+}
+.home #homecontent .btn:hover{
+    background-color: rgb(236, 163, 85,0.6);
+    height:35px;width:130px;
+}
+.services-container .primarycenter{
+    color:rgb(139, 187, 7);
+    font-size: 400%;
+    font-family: "Fredericka the Great", serif;
+    text-align: center;
+    margin-top:40px;
+}
+#services{
+    display: flex;margin:40px;padding:30px;text-align: center;justify-content: space-between;
+}
+#services .box1,.box2,.box3 {
+    border: 3px solid brown;
+    border-radius: 20px;
+    margin: 0 20px;
+    height:400px;
+    background-color:rgb(246, 210, 179);
+    position: sticky;
+}
+#services .box1:hover,.box2:hover,.box3:hover {
+    height:402px;transition: height 0.2s;
+    box-shadow: 3px 3px 3px rgb(173, 172, 172);
+    background-color:rgb(246, 210, 179,0.8);
+}
+
+#services img{
+    height:100px;width:100px;
+}
+#services p {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the paragraph */
+    box-sizing: border-box;
+}
+.ourclient{
+    height:700px;display: flex;
+    flex-direction: column;
+    background-image: url('contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 45px;
+}
+.ourclient h2{
+    position:relative;
+    bottom:10px;color:white;
+    color:rgb(139, 187, 7);
+    font-size: 400%;
+    font-family: "Fredericka the Great", serif;
+    text-align: center;
+}
+.ourclient .form label{
+    color:rgb(255, 255, 255);
+    margin:30px;
+    text-align: center;
+}
+.ourclient .form input[type="text"],input[type="email"]{
+    height:70%;
+    margin-bottom: 15px;
+    width: 40%;
+    
+}
+.ourclient .form .form-group {
+    height:70px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Space between form groups */
+    text-align: center;
+}
+.ourclient .form input[type="text"]:hover,input[type="email"]:hover{
+    background-color: rgb(246, 210, 179);
+}
+
+.ourclient .form .form-group label[for="name"]{
+    padding:33px;
+}
+.ourclient .form .form-group label[for="email"]{
+    padding:22px;
+}
+.ourclient .form{
+    position:relative;left:300px;
+}
+.partners .images img{
+    height:200px;
+    width:200px;
+    display: inline-block;
+    margin:4px;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding:10px;
+}
+.partners h1{
+    position:relative;
+    top:95px;color:white;
+    color:rgb(139, 187, 7);
+    font-size: 400%;
+    font-family: "Fredericka the Great", serif;
+    text-align: center;
+
+}
